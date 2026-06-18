@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowUp, Terminal, Cpu } from "lucide-react";
+import kurakiLogo from "../img/kurakilogo1.png";
 
 export default function Footer() {
   const handleScrollToTop = (e: React.MouseEvent) => {
@@ -29,9 +30,12 @@ export default function Footer() {
               onClick={handleScrollToTop}
               className="flex items-center space-x-2 group"
             >
-              <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-purple-600 font-bold text-white leading-none">
-                <span className="font-display text-base">K</span>
-                <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-brand-accent rounded-full border-2 border-slate-950 shadow" />
+              <div className="relative flex items-center justify-center w-22 h-22 rounded-lg from-indigo-500 to-purple-600 font-bold text-white leading-none">
+              <img
+                src={kurakiLogo}
+                alt="Kuraki Logo"
+                className="w-22 h-22 object-contain"
+              />
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-lg font-bold tracking-tight text-white group-hover:text-brand-primary transition-colors">

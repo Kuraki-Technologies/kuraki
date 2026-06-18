@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, ArrowUpRight, ShieldCheck } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import kurakiLogo from "../img/kurakilogo1.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,8 +56,12 @@ export default function Header() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            <div className="relative flex items-center justify-center w-9 h-9 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 font-bold text-white transition-transform group-hover:rotate-12 duration-300">
-              <span className="font-display text-lg">K</span>
+            <div className="relative flex items-center justify-center w-22 h-22 rounded-lg from-indigo-500 to-purple-600 font-bold text-white transition-transform group-hover:rotate-12 duration-300">
+             <img
+                src={kurakiLogo}
+                alt="Kuraki Logo"
+                className="w-25 h-25 object-contain"
+              />
               <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-brand-accent rounded-full border-2 border-slate-950 animate-pulse" />
             </div>
             <div className="flex flex-col">
