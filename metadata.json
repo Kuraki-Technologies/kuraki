@@ -1,0 +1,6 @@
+{
+  "name": "Kuraki Technologies Agency Website",
+  "description": "A high-fidelity interactive of the Kuraki Technologies website, a modern computer software design and development agency crafting custom web, mobile, and AI solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

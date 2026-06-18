@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-primary: #6366f1; /* Professional Polish Indigo */
+  --color-brand-accent: #a855f7;  /* Professional Polish Purple */
+  --color-brand-violet: #f43f5e;  /* Professional Polish Pink-Red */
+}
+
+/* Custom smooth scroll and background adjustments */
+html {
+  scroll-behavior: smooth;
+  background-color: #050810; /* Clean Deep Dark Blue-Charcoal */
+}
+
+/* Hide scrollbar for clean carousel if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom glow animations */
+@keyframes glow-pulse {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(1.05);
+  }
+}
+
+.glow-bg {
+  animation: glow-pulse 8s infinite ease-in-out;
+}
+
